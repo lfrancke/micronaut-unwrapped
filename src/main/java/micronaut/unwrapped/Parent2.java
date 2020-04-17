@@ -1,15 +1,16 @@
 package micronaut.unwrapped;
 
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
-import io.micronaut.core.annotation.Introspected;
 
-@Introspected
-public class Parent {
+public class Parent2 {
 
   private int age;
 
   @JsonUnwrapped
   private Name name;
+
+  @JsonUnwrapped
+  public Name name2;
 
   public int getAge() {
     return age;
